@@ -1,0 +1,46 @@
+body {
+    background-color: #f0f2f5;
+    font-family: 'Courier New', Courier, monospace; /* Dijital saat hissi için */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Tam ekran yüksekliği */
+    margin: 0;
+}
+
+.container {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    text-align: center;
+    min-width: 300px;
+}
+
+
+/* Sayıların olduğu alan */
+#second, #split {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #333;
+}
+
+button {
+    margin: 10px 5px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    color: white;
+    transition: opacity 0.3s;
+}
+
+button:hover {
+    opacity: 0.9;
+}
+
+/* HTML'deki class isimlerine göre renkler */
+.start { background-color: #2ecc71; }
+.stop { background-color: #e74c3c; }
+.reset { background-color: #3498db; }

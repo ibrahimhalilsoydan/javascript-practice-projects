@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Rubik+Moonrocks&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Inter',sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    background-color:grey;
+    overflow-x: hidden;
+}
+
+h1{
+    color: aliceblue;
+    margin: 10px;
+    font-size: 50px;
+}
+
+.box{
+    background-color: burlywood;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 400px;
+    height: 120px;
+    margin: 8px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5);
+    border: 2px solid #fff;
+    transform: translateX(400%);
+    transition: transform 0.3s ease;
+}
+
+.box:nth-last-of-type(even){
+    transform: translateX(-400%);
+}
+
+.box.show{
+    transform: translateX(0);
+}
+
+.box h2{
+    font-size: 35px;
+}
