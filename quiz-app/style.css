@@ -1,0 +1,127 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  background: url(img/books-with-brain-digital-art-style-education-day.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  overflow: hidden;
+}
+
+.quiz-container {
+  background-color: lightgray;
+  border-radius: 15px;
+  /*  text-align: center; */
+  width: 600px;
+  margin-bottom: 4rem;
+}
+
+.quiz-header {
+  padding: 4em;
+}
+
+h1 {
+  color: black;
+  display: flex;
+  justify-content: center; /* yatay */
+  align-items: center;
+}
+
+h2 {
+  padding: 0 1rem;
+}
+
+ul {
+  list-style-type: none;
+  padding: 10px;
+}
+
+ul li {
+  font-size: 1.2rem;
+  margin: 1rem 0;
+}
+
+ul li label {
+  cursor: pointer;
+}
+
+.submit {
+  border: none;
+  background-color: #a8c82f;
+  font-family: inherit;
+  font-weight: bold;
+  font-size: 1.5rem;
+  display: block;
+  width: 100%;
+  border-radius: 0 0 15px 15px;
+  padding: 1rem;
+  cursor: pointer;
+}
+
+#submit:focus::after {
+  content: ", Son Kararım";
+}
+
+#submit:focus {
+  outline: none;
+  background-color: #f87da9;
+}
+
+[type="radio"]:checked,
+[type="radio"]:not(:checked) {
+  display: none;
+}
+
+[type="radio"]:checked + label,
+[type="radio"]:not(:checked) + label {
+  position: relative;
+  padding-left: 2rem;
+  cursor: pointer;
+}
+
+[type="radio"]:checked + label:before,
+[type="radio"]:not(:checked) + label:before {
+
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    border: 1px solid black;
+    width: 1.1rem;
+    height: 1.1rem;
+    border-radius: 50%;
+    
+
+}
+
+[type="radio"]:checked + label::after,
+[type="radio"]:not(:checked) + label::after{
+    content: "";
+    position: absolute;
+    top: 4px;
+    left: 4px;
+   
+    width: 0.75rem;
+    height: 0.75rem;
+    background-color: #f87da9;
+    transition: all 0.2s ease;
+  
+     border-radius: 50%;
+}
+
+[type="radio"]:not(:checked)+label:after{
+    opacity: 0;
+}
+[type="radio"]:checked+label:after{
+    opacity: 1;
+}
+
